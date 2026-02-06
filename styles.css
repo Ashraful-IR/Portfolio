@@ -247,7 +247,7 @@ p:last-child {
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: var(--space-4) var(--space-4);
+    padding: var(--space-4) var(--space-1);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -255,15 +255,22 @@ p:last-child {
 
 @media (min-width: 768px) {
     .nav-container {
-        padding: var(--space-4) var(--space-8);
+        padding: var(--space-4) var(--space-1);
     }
 }
 
 .nav-logo a {
-    font-size: var(--font-size-2xl);
-    font-weight: 600;
+    font-size: 32px;
+    font-weight: 700;
     color: var(--color-text-primary);
     transition: color var(--transition-base);
+    background: linear-gradient(90deg,
+            rgb(154, 207, 238),
+            rgb(76, 112, 121),
+            rgb(145, 0, 248));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .nav-logo a:hover {
@@ -377,7 +384,8 @@ body {
     align-items: start;
 }
 
-.footer h3, .footer h4 {
+.footer h3,
+.footer h4 {
     margin-bottom: var(--space-3);
     color: #000000;
 }
@@ -412,6 +420,7 @@ body {
     .footer-grid {
         grid-template-columns: 1fr;
     }
+
     .footer-bottom {
         flex-direction: column;
         gap: var(--space-3);
@@ -439,9 +448,10 @@ body {
 }
 
 .btn-primary {
-    background-color: var(--color-primary);
-    color: white;
+    background-color: #5bf9ff;
+    color: #374151;
 }
+
 
 .btn-primary:hover {
     background-color: #1d4ed8;
@@ -475,6 +485,16 @@ body {
     padding: var(--space-20) var(--space-4);
     text-align: center;
     background: linear-gradient(135deg, #d0faff 0%, #f8f9fa 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero img {
+    max-width: 50%;
+    height: auto;
+    border-radius: var(--radius-lg);
 }
 
 @media (min-width: 768px) {
@@ -526,6 +546,7 @@ body {
     position: relative;
     display: inline-block;
     margin-bottom: var(--space-4);
+    font-size: 70px;
 }
 
 .section-header h2::after {
@@ -695,11 +716,59 @@ body {
 }
 
 .skill-category {
-    background-color: var(--color-bg-light);
+    position: relative; /* needed for pseudo-elements */
+    background-color: #c7fcff;
     padding: var(--space-8);
     border-radius: var(--radius-lg);
     border: 1px solid var(--color-border);
-    transition: all var(--transition-base);
+    transition: all var(--transition-base); 
+    overflow: hidden;
+    
+    /* bring content above the pseudo-elements */
+    z-index: 0; 
+}
+
+/* Neon tracer */
+.skill-category::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+
+    background: conic-gradient(
+        #6b0a5e 0deg,
+        #3cf3ff 60deg,
+        #f0feff 120deg,
+        #3cf3ff 180deg,
+        #a31c8d 240deg,
+        transparent 360deg
+    );
+
+    filter: blur(4px);
+    z-index: 1; /* behind text */
+    pointer-events: none;
+    animation: neon-rotate 4s linear infinite;
+}
+
+/* Mask for edges */
+.skill-category::after {
+    content: '';
+    position: absolute;
+    inset: 3px; /* slightly smaller than ::before */
+    background: #c7fcff;
+    border-radius: inherit;
+    z-index: 1; /* must be lower than text */
+}
+
+/* Make text appear above everything */
+.skill-category > * {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes neon-rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 .skill-category:hover {
@@ -773,6 +842,7 @@ body {
     color: var(--color-text-secondary);
     line-height: var(--line-height-relaxed);
     margin-bottom: var(--space-6);
+    text-align: justify;
 }
 
 .about-stats {
@@ -939,6 +1009,8 @@ body {
 
     .hero {
         padding: var(--space-16) var(--space-4);
+        display: flex;
+        flex-direction: column;
     }
 
     .work,
