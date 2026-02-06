@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learning Platform Redesign - Project Case Study">
+    <title>Learning Platform Redesign — Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../#hero">Portfolio</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../#work" class="nav-link">Work</a></li>
+                <li><a href="../#skills" class="nav-link">Skills</a></li>
+                <li><a href="../#about" class="nav-link">About</a></li>
+                <li><a href="../#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" role="button" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Case Study Header -->
+    <section class="case-study-header">
+        <div class="container">
+            <a href="../#work" class="back-link">← Back to Work</a>
+            <h1>Learning Platform Redesign</h1>
+            <p class="case-study-subtitle">Making online education more engaging and accessible</p>
+            <div class="case-study-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Role</span>
+                    <span class="meta-value">Product Designer & Researcher</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Timeline</span>
+                    <span class="meta-value">10 Months</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Team</span>
+                    <span class="meta-value">8 People</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Content -->
+    <section class="case-study-content">
+        <div class="container">
+            <!-- Overview Image -->
+            <div class="case-study-image">
+                <img src="../assets/project-4.jpg" alt="Learning Platform Interface">
+            </div>
+
+            <!-- Problem -->
+            <div class="case-study-section">
+                <h2>The Problem</h2>
+                <p>
+                    A major online learning platform with 500K+ students was experiencing high course dropout rates. 
+                    Only 12% of students completed courses they started. Interviews revealed that the interface felt 
+                    overwhelming, progress was hard to track, and students didn't know how to navigate their learning journey.
+                </p>
+                <p>
+                    Key pain points identified:
+                </p>
+                <ul class="case-study-list">
+                    <li>Course structure was unclear; students didn't know what to study next</li>
+                    <li>No sense of progress or achievement</li>
+                    <li>Accessibility issues made learning difficult for users with disabilities</li>
+                    <li>Overwhelming course catalog with poor search and filtering</li>
+                </ul>
+            </div>
+
+            <!-- Goals -->
+            <div class="case-study-section">
+                <h2>Goals & Constraints</h2>
+                <div class="goals-grid">
+                    <div class="goal-item">
+                        <h3>Primary Goal</h3>
+                        <p>Increase course completion rate from 12% to 50%</p>
+                    </div>
+                    <div class="goal-item">
+                        <h3>Secondary Goal</h3>
+                        <p>Meet WCAG 2.1 AA accessibility standards</p>
+                    </div>
+                    <div class="goal-item">
+                        <h3>Constraint 1</h3>
+                        <p>Migrate 10K+ existing courses without data loss</p>
+                    </div>
+                    <div class="goal-item">
+                        <h3>Constraint 2</h3>
+                        <p>Support legacy systems and integrations</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Process -->
+            <div class="case-study-section">
+                <h2>Design Process</h2>
+                
+                <h3>Research Phase</h3>
+                <p>
+                    Led a comprehensive research initiative:
+                </p>
+                <ul class="case-study-list">
+                    <li>25 learner interviews across different demographics and skill levels</li>
+                    <li>5,000+ survey responses about learning goals and frustrations</li>
+                    <li>Analysis of 100+ courses to identify teaching patterns</li>
+                    <li>Accessibility audit revealing WCAG violations</li>
+                </ul>
+
+                <h3>Key Insights</h3>
+                <p>
+                    Research revealed that learners want:
+                </p>
+                <ul class="case-study-list">
+                    <li>Clear roadmaps showing where they are and what's next</li>
+                    <li>Visible progress that feels motivating, not stressful</li>
+                    <li>Simplified interface that doesn't feel like a content dump</li>
+                </ul>
+
+                <h3>Design & Testing</h3>
+                <p>
+                    Created wireframes and prototypes testing different approaches to course structure, progress tracking, 
+                    and navigation. Conducted moderated usability testing with 12 learners at different stages of their journey. 
+                    Tested with assistive technologies (screen readers, magnifiers) to ensure accessibility.
+                </p>
+            </div>
+
+            <!-- Solution -->
+            <div class="case-study-section">
+                <h2>Solution</h2>
+
+                <h3>1. Learning Pathways</h3>
+                <p>
+                    Redesigned course navigation to show clear learning paths with chapters and lessons organized logically. 
+                    Students see the full structure upfront and always know where they are. Suggested "next steps" at the 
+                    bottom of each lesson.
+                </p>
+
+                <h3>2. Progress Visualization</h3>
+                <p>
+                    Implemented multiple progress indicators without being overwhelming: course-level progress bar, 
+                    lesson checkmarks, and achievement badges. Progress feels rewarding, not stressful.
+                </p>
+
+                <h3>3. Accessible by Design</h3>
+                <p>
+                    Built the entire interface with accessibility at the core:
+                </p>
+                <ul class="case-study-list">
+                    <li>Proper semantic HTML with ARIA labels</li>
+                    <li>High contrast color combinations (7:1 ratio)</li>
+                    <li>Keyboard-only navigation fully supported</li>
+                    <li>Captions and transcripts for all video content</li>
+                    <li>Tested extensively with screen readers</li>
+                </ul>
+
+                <h3>4. Improved Discoverability</h3>
+                <p>
+                    Redesigned the course catalog with smarter filtering, better search, and personalized recommendations 
+                    based on learning history and goals. Course cards now show prerequisites and estimated completion time.
+                </p>
+            </div>
+
+            <!-- Results -->
+            <div class="case-study-section">
+                <h2>Results</h2>
+                <div class="results-grid">
+                    <div class="result-card">
+                        <div class="result-number">65%</div>
+                        <div class="result-label">Course completion rate</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">45%</div>
+                        <div class="result-label">More course starts</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">WCAG 2.1 AA</div>
+                        <div class="result-label">Accessibility compliance</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">3.5K+</div>
+                        <div class="result-label">Positive feedback comments</div>
+                    </div>
+                </div>
+
+                <h3>Impact on Business</h3>
+                <p>
+                    The redesign had significant business impact: completion rate increased from 12% to 65% (a 5.4x improvement), 
+                    course enrollment grew 45%, and student satisfaction scores improved significantly. The platform became 
+                    a leader in accessible online education.
+                </p>
+
+                <h3>User Feedback</h3>
+                <blockquote class="testimonial">
+                    "This platform actually feels like it wants to help me learn. The interface got out of the way and I just 
+                    focused on the content. I've completed 5 courses now—previously I couldn't finish one."
+                    <cite>— Maria Rodriguez, Learner</cite>
+                </blockquote>
+            </div>
+
+            <!-- Learnings -->
+            <div class="case-study-section">
+                <h2>Key Learnings</h2>
+                <ul class="case-study-list">
+                    <li>In educational products, clear structure and progress visualization drive completion</li>
+                    <li>Accessibility benefits everyone—learners with disabilities were our canaries</li>
+                    <li>Comprehensive research early prevents costly redesigns later</li>
+                    <li>Small UX improvements can have massive impact on engagement metrics</li>
+                    <li>Users value simplicity over feature richness in learning contexts</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Work -->
+    <section class="next-project">
+        <div class="container">
+            <h3>Back to Featured Work</h3>
+            <a href="../#work" class="next-project-link">
+                View All Projects
+                <span>→</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Jordan's Portfolio. Designed and built with attention to detail.</p>
+            <a href="../#hero" class="scroll-to-top">Back to top</a>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
