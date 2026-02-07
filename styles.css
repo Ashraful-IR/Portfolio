@@ -1549,6 +1549,27 @@ p:last-child {
     align-items: center;
 }
 
+
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    flex-direction: column;
+    background: #111;
+    width: 100%;
+    transition: right 0.3s ease;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+}
 @media (min-width: 768px) {
     .nav-container {
         padding: var(--space-4) var(--space-1);
