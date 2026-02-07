@@ -733,6 +733,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: var(--space-4);
+    border-radius: 5px;
 }
 .heading {
     font-size: 20px;
