@@ -697,6 +697,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--space-10);
+    
 }
 
 @media (min-width: 640px) {
@@ -1804,6 +1805,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: var(--space-12);
 }
 
 .hero img {
