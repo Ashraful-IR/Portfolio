@@ -1,237 +1,351 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Design System & Tokens - Project Case Study">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Design System & Tokens - Project Case Study"
+    />
     <title>Design System & Tokens — Portfolio</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="../#hero">Portfolio</a>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="../#work" class="nav-link">Work</a></li>
-                <li><a href="../#skills" class="nav-link">Skills</a></li>
-                <li><a href="../#about" class="nav-link">About</a></li>
-                <li><a href="../#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger" role="button" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="#hero">ASHRAFUL</a>
         </div>
+        <ul class="nav-menu">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#resume" class="nav-link">Resume</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger" role="button" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </nav>
 
     <!-- Case Study Header -->
     <section class="case-study-header">
-        <div class="container">
-            <a href="../#work" class="back-link">← Back to Work</a>
-            <h1>Design System & Tokens</h1>
-            <p class="case-study-subtitle">Scaling design consistency across 5 products</p>
-            <div class="case-study-meta">
-                <div class="meta-item">
-                    <span class="meta-label">Role</span>
-                    <span class="meta-value">Design Systems Lead</span>
-                </div>
-                <div class="meta-item">
-                    <span class="meta-label">Timeline</span>
-                    <span class="meta-value">9 Months</span>
-                </div>
-                <div class="meta-item">
-                    <span class="meta-label">Team</span>
-                    <span class="meta-value">12 People</span>
-                </div>
-            </div>
+      <div class="container">
+        <a href="../#work" class="back-link">← Back to Work</a>
+        <h1>Design System & Tokens</h1>
+        <p class="case-study-subtitle">
+          Scaling design consistency across 5 products
+        </p>
+        <div class="case-study-meta">
+          <div class="meta-item">
+            <span class="meta-label">Role</span>
+            <span class="meta-value">Design Systems Lead</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Timeline</span>
+            <span class="meta-value">9 Months</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Team</span>
+            <span class="meta-value">12 People</span>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Case Study Content -->
     <section class="case-study-content">
-        <div class="container">
-            <!-- Overview Image -->
-            <div class="case-study-image">
-                <img src="../assets/project-3.jpg" alt="Design System Components">
-            </div>
-
-            <!-- Problem -->
-            <div class="case-study-section">
-                <h2>The Problem</h2>
-                <p>
-                    As the company scaled, we had 5 different products being designed and developed in parallel by separate teams. 
-                    Each team had made their own design decisions, resulting in inconsistent UI patterns, colors, typography, 
-                    and component behavior. This fragmented experience hurt brand cohesion and slowed down design-to-development handoff.
-                </p>
-                <p>
-                    Developers were rebuilding the same components across products, and designers were recreating wheels instead 
-                    of focusing on solving user problems. We needed a single source of truth.
-                </p>
-            </div>
-
-            <!-- Goals -->
-            <div class="case-study-section">
-                <h2>Goals & Constraints</h2>
-                <div class="goals-grid">
-                    <div class="goal-item">
-                        <h3>Primary Goal</h3>
-                        <p>Create a unified design system used by all 5 products</p>
-                    </div>
-                    <div class="goal-item">
-                        <h3>Secondary Goal</h3>
-                        <p>Reduce design-to-dev handoff time by 50%</p>
-                    </div>
-                    <div class="goal-item">
-                        <h3>Constraint 1</h3>
-                        <p>Work doesn't block existing product development</p>
-                    </div>
-                    <div class="goal-item">
-                        <h3>Constraint 2</h3>
-                        <p>Support multiple platforms (Web, iOS, Android)</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Process -->
-            <div class="case-study-section">
-                <h2>Design Process</h2>
-                
-                <h3>Audit & Strategy</h3>
-                <p>
-                    First, I conducted a comprehensive design audit across all 5 products, documenting:
-                </p>
-                <ul class="case-study-list">
-                    <li>Color palettes and usage patterns</li>
-                    <li>Typography implementations</li>
-                    <li>Existing components and patterns</li>
-                    <li>Breaking points and inconsistencies</li>
-                </ul>
-
-                <h3>Foundation Building</h3>
-                <p>
-                    We established a design language with:
-                </p>
-                <ul class="case-study-list">
-                    <li><strong>Color system:</strong> Semantic tokens with light/dark mode support</li>
-                    <li><strong>Typography:</strong> Consistent scale and hierarchy across platforms</li>
-                    <li><strong>Spacing:</strong> 8px grid-based system</li>
-                    <li><strong>Icons:</strong> Curated icon library with consistent stroke weight</li>
-                </ul>
-
-                <h3>Component Library</h3>
-                <p>
-                    Built 30+ reusable components with documentation:
-                </p>
-                <ul class="case-study-list">
-                    <li>Buttons, forms, modals, navigation components</li>
-                    <li>Data display (tables, charts, lists)</li>
-                    <li>States documented for each component</li>
-                </ul>
-
-                <h3>Implementation & Documentation</h3>
-                <p>
-                    Created comprehensive documentation in Figma, including design tokens in code (JSON/CSS variables), 
-                    accessibility guidelines, and usage examples. Built a component library in React for Web products.
-                </p>
-            </div>
-
-            <!-- Solution -->
-            <div class="case-study-section">
-                <h2>Solution</h2>
-
-                <h3>Design Tokens</h3>
-                <p>
-                    Created a complete token system (colors, typography, spacing, shadows, borders) that lives in code 
-                    and design tool simultaneously. Tokens are semantic and platform-agnostic, enabling consistency across Web, iOS, and Android.
-                </p>
-
-                <h3>Component Library</h3>
-                <p>
-                    Built a React component library that implements the design system in code. Every component includes 
-                    accessible HTML, keyboard navigation, and dark mode support. Component documentation includes usage 
-                    guidelines and design rationale.
-                </p>
-
-                <h3>Figma Design Kit</h3>
-                <p>
-                    Created Figma library with all components, styles, and tokens. Designers can now create mockups that 
-                    automatically reflect design system changes. Components are organized logically and clearly documented.
-                </p>
-
-                <h3>Guidelines & Governance</h3>
-                <p>
-                    Established design system governance with clear processes for proposing new components, deprecating 
-                    old patterns, and handling exceptions. Created quarterly review process to keep the system current.
-                </p>
-            </div>
-
-            <!-- Results -->
-            <div class="case-study-section">
-                <h2>Results</h2>
-                <div class="results-grid">
-                    <div class="result-card">
-                        <div class="result-number">50%</div>
-                        <div class="result-label">Faster design-to-dev</div>
-                    </div>
-                    <div class="result-card">
-                        <div class="result-number">30+</div>
-                        <div class="result-label">Reusable components</div>
-                    </div>
-                    <div class="result-card">
-                        <div class="result-number">40%</div>
-                        <div class="result-label">Less dev code duplication</div>
-                    </div>
-                    <div class="result-card">
-                        <div class="result-number">95%</div>
-                        <div class="result-label">Team adoption rate</div>
-                    </div>
-                </div>
-
-                <h3>Tangible Impact</h3>
-                <p>
-                    Developers reported spending 40% less time on UI implementation because components were pre-built. 
-                    Designers could prototype 50% faster using the component library. Brand consistency improved dramatically 
-                    with 95% of UI following the design system on the first pass.
-                </p>
-            </div>
-
-            <!-- Learnings -->
-            <div class="case-study-section">
-                <h2>Key Learnings</h2>
-                <ul class="case-study-list">
-                    <li>Design systems work best when driven by real product needs, not theory</li>
-                    <li>Cross-functional buy-in is critical—involve dev and design teams from the start</li>
-                    <li>Living documentation is essential; static docs become outdated</li>
-                    <li>Semantic tokens allow flexibility for dark mode and theming without duplication</li>
-                    <li>Governance must balance consistency with the need to innovate</li>
-                </ul>
-            </div>
+      <div class="container">
+        <!-- Overview Image -->
+        <div class="case-study-image">
+          <img src="../assets/project-3.jpg" alt="Design System Components" />
         </div>
+
+        <!-- Problem -->
+        <div class="case-study-section">
+          <h2>The Problem</h2>
+          <p>
+            As the company scaled, we had 5 different products being designed
+            and developed in parallel by separate teams. Each team had made
+            their own design decisions, resulting in inconsistent UI patterns,
+            colors, typography, and component behavior. This fragmented
+            experience hurt brand cohesion and slowed down design-to-development
+            handoff.
+          </p>
+          <p>
+            Developers were rebuilding the same components across products, and
+            designers were recreating wheels instead of focusing on solving user
+            problems. We needed a single source of truth.
+          </p>
+        </div>
+
+        <!-- Goals -->
+        <div class="case-study-section">
+          <h2>Goals & Constraints</h2>
+          <div class="goals-grid">
+            <div class="goal-item">
+              <h3>Primary Goal</h3>
+              <p>Create a unified design system used by all 5 products</p>
+            </div>
+            <div class="goal-item">
+              <h3>Secondary Goal</h3>
+              <p>Reduce design-to-dev handoff time by 50%</p>
+            </div>
+            <div class="goal-item">
+              <h3>Constraint 1</h3>
+              <p>Work doesn't block existing product development</p>
+            </div>
+            <div class="goal-item">
+              <h3>Constraint 2</h3>
+              <p>Support multiple platforms (Web, iOS, Android)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Process -->
+        <div class="case-study-section">
+          <h2>Design Process</h2>
+
+          <h3>Audit & Strategy</h3>
+          <p>
+            First, I conducted a comprehensive design audit across all 5
+            products, documenting:
+          </p>
+          <ul class="case-study-list">
+            <li>Color palettes and usage patterns</li>
+            <li>Typography implementations</li>
+            <li>Existing components and patterns</li>
+            <li>Breaking points and inconsistencies</li>
+          </ul>
+
+          <h3>Foundation Building</h3>
+          <p>We established a design language with:</p>
+          <ul class="case-study-list">
+            <li>
+              <strong>Color system:</strong> Semantic tokens with light/dark
+              mode support
+            </li>
+            <li>
+              <strong>Typography:</strong> Consistent scale and hierarchy across
+              platforms
+            </li>
+            <li><strong>Spacing:</strong> 8px grid-based system</li>
+            <li>
+              <strong>Icons:</strong> Curated icon library with consistent
+              stroke weight
+            </li>
+          </ul>
+
+          <h3>Component Library</h3>
+          <p>Built 30+ reusable components with documentation:</p>
+          <ul class="case-study-list">
+            <li>Buttons, forms, modals, navigation components</li>
+            <li>Data display (tables, charts, lists)</li>
+            <li>States documented for each component</li>
+          </ul>
+
+          <h3>Implementation & Documentation</h3>
+          <p>
+            Created comprehensive documentation in Figma, including design
+            tokens in code (JSON/CSS variables), accessibility guidelines, and
+            usage examples. Built a component library in React for Web products.
+          </p>
+        </div>
+
+        <!-- Solution -->
+        <div class="case-study-section">
+          <h2>Solution</h2>
+
+          <h3>Design Tokens</h3>
+          <p>
+            Created a complete token system (colors, typography, spacing,
+            shadows, borders) that lives in code and design tool simultaneously.
+            Tokens are semantic and platform-agnostic, enabling consistency
+            across Web, iOS, and Android.
+          </p>
+
+          <h3>Component Library</h3>
+          <p>
+            Built a React component library that implements the design system in
+            code. Every component includes accessible HTML, keyboard navigation,
+            and dark mode support. Component documentation includes usage
+            guidelines and design rationale.
+          </p>
+
+          <h3>Figma Design Kit</h3>
+          <p>
+            Created Figma library with all components, styles, and tokens.
+            Designers can now create mockups that automatically reflect design
+            system changes. Components are organized logically and clearly
+            documented.
+          </p>
+
+          <h3>Guidelines & Governance</h3>
+          <p>
+            Established design system governance with clear processes for
+            proposing new components, deprecating old patterns, and handling
+            exceptions. Created quarterly review process to keep the system
+            current.
+          </p>
+        </div>
+
+        <!-- Results -->
+        <div class="case-study-section">
+          <h2>Results</h2>
+          <div class="results-grid">
+            <div class="result-card">
+              <div class="result-number">50%</div>
+              <div class="result-label">Faster design-to-dev</div>
+            </div>
+            <div class="result-card">
+              <div class="result-number">30+</div>
+              <div class="result-label">Reusable components</div>
+            </div>
+            <div class="result-card">
+              <div class="result-number">40%</div>
+              <div class="result-label">Less dev code duplication</div>
+            </div>
+            <div class="result-card">
+              <div class="result-number">95%</div>
+              <div class="result-label">Team adoption rate</div>
+            </div>
+          </div>
+
+          <h3>Tangible Impact</h3>
+          <p>
+            Developers reported spending 40% less time on UI implementation
+            because components were pre-built. Designers could prototype 50%
+            faster using the component library. Brand consistency improved
+            dramatically with 95% of UI following the design system on the first
+            pass.
+          </p>
+        </div>
+
+        <!-- Learnings -->
+        <div class="case-study-section">
+          <h2>Key Learnings</h2>
+          <ul class="case-study-list">
+            <li>
+              Design systems work best when driven by real product needs, not
+              theory
+            </li>
+            <li>
+              Cross-functional buy-in is critical—involve dev and design teams
+              from the start
+            </li>
+            <li>
+              Living documentation is essential; static docs become outdated
+            </li>
+            <li>
+              Semantic tokens allow flexibility for dark mode and theming
+              without duplication
+            </li>
+            <li>
+              Governance must balance consistency with the need to innovate
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <!-- Next Project -->
     <section class="next-project">
-        <div class="container">
-            <h3>Next Project</h3>
-            <a href="project-4.html" class="next-project-link">
-                Learning Platform Redesign
-                <span>→</span>
-            </a>
-        </div>
+      <div class="container">
+        <h3>Next Project</h3>
+        <a href="project-4.html" class="next-project-link">
+          Learning Platform Redesign
+          <span>→</span>
+        </a>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Jordan's Portfolio. Designed and built with attention to detail.</p>
-            <a href="../#hero" class="scroll-to-top">Back to top</a>
+      <div class="container footer-grid">
+        <div class="footer-about">
+          <h3 style="text-align: center; font-size: 3em">
+            Ashraful
+            <span style="display: block; font-size: 0.3em"
+              >Software Engineer , Researcher & Frontend Developer</span
+            >
+          </h3>
+          <p>
+            I create thoughtful digital products focused on usability, clarity,
+            and meaningful user experiences. Available for freelance and
+            contract work. Let's build something people love.
+          </p>
         </div>
+
+        <div class="footer-links">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#work">Featured Work</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <span
+            ><i class="fas fa-envelope"></i
+            ><a href="mailto:rifo0118@gmail.com">rifo0118@gmail.com</a></span
+          >
+          <span><i class="fas fa-map-marker-alt"></i>Dhaka, Bangladesh</span>
+        </div>
+
+        <div class="footer-social">
+          <h4>Connect</h4>
+          <ul class="social-list">
+            <li>
+              <i class="fab fa-linkedin"></i>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <i class="fab fa-twitter"></i>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <i class="fab fa-github"></i>
+              <a
+                href="https://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom" aria-hidden="false">
+          <p class="small">
+            &copy; 2026 Ashraful's Portfolio. All rights reserved to Md Ashraful
+            Islam.
+          </p>
+          <a href="#hero" class="scroll-to-top">Back to top</a>
+        </div>
+      </div>
     </footer>
 
     <script src="../script.js"></script>
-</body>
+  </body>
 </html>
