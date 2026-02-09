@@ -386,12 +386,19 @@ a:focus-visible {
   margin: 0 auto;
   padding: 0 15px; /* small padding for mobile */
 }
+.C-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+      }
 
 /* slider shell */
 .cert-slider {
   position: relative;
   overflow: hidden;
-  width: 50%;             /* makes the slider narrower */
+  width: 45%;             /* makes the slider narrower */
   max-width: 800px;       /* max width for big screens */
   height: auto;          /* fixed height */
   margin: 40px auto;      /* centers horizontally */
@@ -447,6 +454,10 @@ a:focus-visible {
   .cert-slider {
   width: auto;     
 }
+.C-container {
+        flex-direction:column;
+        
+      }
 }
 
 /* Medium devices (tablet) */

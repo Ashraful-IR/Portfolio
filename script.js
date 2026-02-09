@@ -142,28 +142,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
   console.log("Portfolio JS loaded successfully");
 });
-const certTrack = document.querySelector(".cert-track");
-const certSlides = document.querySelectorAll(".cert-slide");
-const certNext = document.querySelector(".cert-btn.next");
-const certPrev = document.querySelector(".cert-btn.prev");
+document.querySelectorAll('.cert-slider').forEach(slider => {
+  const track = slider.querySelector('.cert-track');
+  const slides = slider.querySelectorAll('.cert-slide');
+  const prev = slider.querySelector('.prev');
+  const next = slider.querySelector('.next');
+  let index = 0;
 
-let certIndex = 0;
+  function updateSlider() {
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }
 
-function updateCertSlider() {
-  certTrack.style.transform = `translateX(-${certIndex * 100}%)`;
-}
+  prev.addEventListener('click', () => {
+    index = (index > 0) ? index - 1 : slides.length - 1;
+    updateSlider();
+  });
 
-/* auto slide every 3 seconds */
-setInterval(() => {
-  certIndex = (certIndex + 1) % certSlides.length;
-  updateCertSlider();
-}, 3500);
-certNext.addEventListener("click", () => {
-  certIndex = (certIndex + 1) % certSlides.length;
-  updateCertSlider();
-});
+  next.addEventListener('click', () => {
+    index = (index < slides.length - 1) ? index + 1 : 0;
+    updateSlider();
+  });
 
-certPrev.addEventListener("click", () => {
-  certIndex = (certIndex - 1 + certSlides.length) % certSlides.length;
-  updateCertSlider();
+  // auto slide
+  setInterval(() => {
+    index = (index < slides.length - 1) ? index + 1 : 0;
+    updateSlider();
+  }, 3000);
 });
