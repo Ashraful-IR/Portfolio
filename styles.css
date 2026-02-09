@@ -2041,11 +2041,22 @@ body {
     height: auto;
     border-radius: var(--radius-lg);
 }
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero img {
+        max-width: 70%;
+    }
+    
+}
 
 @media (min-width: 768px) {
     .hero {
         padding: var(--space-24) var(--space-8);
     }
+
 }
 
 

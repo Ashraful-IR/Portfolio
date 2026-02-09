@@ -78,21 +78,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ========== Mobile Menu Toggle ==========
     if (hamburger && navMenu) {
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-            console.log('Hamburger toggled'); // debug proof of life
-        });
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        console.log('Hamburger toggled');
+    });
 
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
-            });
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
         });
-    } else {
-        console.log('Hamburger or navMenu not found in DOM');
-    }
+    });
+} else {
+    console.log('Hamburger or navMenu not found in DOM');
+}
 
     // ========== Navbar Shadow ==========
     window.addEventListener('scroll', () => {
