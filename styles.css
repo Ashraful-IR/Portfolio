@@ -167,6 +167,212 @@ a:focus-visible {
     /* animation: neon-flow 2.5s infinite; */
     margin: 0 auto;
 }
+.education {
+  padding: 80px 20px;
+  background:  #ffffff;
+  color: #28292c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.education .container {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Section Header */
+
+.section-header p {
+  margin-top: 10px;
+  color: #101b2c;
+  font-size: 1.05rem;
+  text-align: wrap;
+}
+
+/* Timeline Grid */
+.education-grid {
+  position: relative;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Vertical line */
+.education-grid::before {
+  content: '';
+  position: absolute;
+  left: 18px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(#38bdf8, #a78bfa);
+  /* ===== Minimal Vertical Timeline ===== */
+.education {
+  padding: 80px 20px;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.education .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Timeline */
+.education-grid {
+  position: relative;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Vertical line */
+.education-grid::before {
+  content: '';
+  position: absolute;
+  left: 18px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(#38bdf8, #a78bfa);
+  border-radius: 2px;
+}
+
+/* Timeline node */
+.education-item::before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(135deg, #38bdf8, #a78bfa);
+  border-radius: 50%;
+  border: 3px solid #0f172a;
+}
+
+/* Text styling */
+.education-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 4px;
+  color: #f1f5f9;
+}
+
+.institution {
+  font-weight: 600;
+  color: #38bdf8;
+  margin-bottom: 2px;
+}
+
+.duration {
+  font-size: 0.9rem;
+  color: #a78bfa;
+  margin-bottom: 4px;
+}
+
+.details {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #cbd5f1;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .education-grid {
+    padding-left: 30px;
+    gap: 30px;
+  }
+  
+  .education-item::before {
+    left: -28px;
+    width: 12px;
+    height: 12px;
+    top: 5px;
+  }
+}
+
+}
+
+/* Timeline items */
+.education-item {
+  position: relative;
+  /*padding: 20px 25px;*/
+  /*background: rgba(15, 23, 42, 0.7);*/
+  /*border-radius: 12px;*/
+  /*border: 1px solid rgba(148, 163, 184, 0.15);*/
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease;
+}
+
+/* Node circle */
+.education-item::before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 0px;
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(135deg, #38bdf8, #a78bfa);
+  border-radius: 50%;
+  border: 3px solid #e2faff;
+}
+
+/* Hover effect */
+.education-item:hover {
+  transform: translateX(6px);
+}
+
+/* Text */
+.education-item h3 {
+      font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+    background: linear-gradient(90deg,
+            rgb(95, 192, 248),
+            rgb(66, 124, 139),
+            rgb(118, 8, 196));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+.institution {
+  font-weight: 400;
+  color: #2c3133;
+  margin-bottom: 4px;
+}
+
+.duration {
+  font-size: 0.9rem;
+  color: #059bbc;
+  margin-bottom: 12px;
+}
+
+.details {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #cbd5f1;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .education-grid {
+    padding-left: 30px;
+    gap: 30px;
+  }
+  
+  .education-item::before {
+    left: -28px;
+    width: 12px;
+    height: 12px;
+    top: 20px;
+  }
+}
 
 @media (min-width: 768px) {
     .container {
