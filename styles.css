@@ -474,6 +474,13 @@ a:focus-visible {
     flex: 0 0 33.33%; /* show 3 slides */
     height: auto;
   }
+  .C-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+      }
 }
 
 
