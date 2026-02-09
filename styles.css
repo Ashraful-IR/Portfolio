@@ -390,18 +390,29 @@ a:focus-visible {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 49%;
+      }
+      .Ultimate-CC{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
+        align-items: center;
         gap: 20px;
+
       }
 
 /* slider shell */
 .cert-slider {
   position: relative;
   overflow: hidden;
-  width: 45%;             /* makes the slider narrower */
-  max-width: 800px;       /* max width for big screens */
-  height: auto;          /* fixed height */
-  margin: 40px auto;      /* centers horizontally */
+  width: 45%;             
+  max-width: 800px;      
+  height: auto;          
+  margin: 40px auto;      
   border: 2px solid #166a8e;
   border-radius: 14px;
   box-sizing: border-box;
@@ -449,14 +460,13 @@ a:focus-visible {
 @media (max-width: 600px) and (max-width: 576px) {
   .cert-slide {
     flex: 0 0 100%;
-    height: 240px;
+    height: auto;
   }
   .cert-slider {
   width: auto;     
 }
 .C-container {
         flex-direction:column;
-        
       }
 }
 
@@ -464,7 +474,7 @@ a:focus-visible {
 @media (min-width: 601px) and (max-width: 992px) {
   .cert-slide {
     flex: 0 0 50%; /* show 2 slides */
-    height: 300px;
+    height: auto;
   }
 }
 
@@ -473,9 +483,6 @@ a:focus-visible {
   .cert-slide {
     flex: 0 0 33.33%; /* show 3 slides */
     height: auto;
-  }
-  .cert-slider {
-    width: 45%;
   }
 }
 
