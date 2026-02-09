@@ -313,7 +313,7 @@ a:focus-visible {
   content: '';
   position: absolute;
   left: -30px;
-  top: 0px;
+  top: 10px;
   width: 16px;
   height: 16px;
   background: linear-gradient(135deg, #38bdf8, #a78bfa);
