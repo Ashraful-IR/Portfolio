@@ -374,6 +374,86 @@ a:focus-visible {
   }
 }
 
+/* ===== Certification Section ===== */
+.cert-slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.cert-track {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.cert-slide {
+  flex: 0 0 100%;
+  width: 100%;
+}
+
+.certification {
+  padding: 80px 20px;
+  background: #ddf7f739;
+  color: #e5e7eb;
+}
+
+ .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* slider shell */
+.cert-slider {
+  position: relative;
+  overflow: hidden;
+  margin-top: 40px;
+  border: 2px solid #166a8e ;
+  border-radius: 14px;
+}
+
+/* moving track */
+.cert-track {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* each slide */
+.cert-slide {
+  width: 90%;
+  flex: 0 0 100%;
+  object-fit: contain;
+  height: auto;
+}
+
+/* buttons */
+.cert-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /*background: rgba(255, 255, 255, 0.6);*/
+  background: transparent;
+  color: rgb(0, 0, 0);
+  border: none;
+  font-size: 26px;
+  padding: 0px;
+  cursor: pointer;
+  /*border-radius: 8px;*/
+  z-index: 5;
+}
+
+.cert-btn.prev { left: 12px; }
+.cert-btn.next { right: 12px; }
+
+.cert-btn:hover {
+  color: rgba(251, 248, 248, 0.85);
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  .cert-slide {
+    height: 240px;
+  }
+}
+
 @media (min-width: 768px) {
     .container {
         padding: 0 var(--space-8);
