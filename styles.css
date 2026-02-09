@@ -391,9 +391,14 @@ a:focus-visible {
 .cert-slider {
   position: relative;
   overflow: hidden;
-  margin-top: 40px;
+  width: 50%;             /* makes the slider narrower */
+  max-width: 800px;       /* max width for big screens */
+  height: auto;          /* fixed height */
+  margin: 40px auto;      /* centers horizontally */
   border: 2px solid #166a8e;
   border-radius: 14px;
+  box-sizing: border-box;
+
 }
 
 /* moving track */
@@ -404,11 +409,11 @@ a:focus-visible {
 
 /* each slide */
 .cert-slide {
-  flex: 0 0 100%;
+   flex: 0 0 100%;
   width: 100%;
-  object-fit: contain;
-  height: auto;
-  padding: 10px;
+  height: 80%;        
+  object-fit: contain;  
+  padding: 5px;
 }
 
 /* buttons */
