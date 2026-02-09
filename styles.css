@@ -444,6 +444,9 @@ a:focus-visible {
     flex: 0 0 100%;
     height: 240px;
   }
+  .cert-slider {
+  width: auto;     
+}
 }
 
 /* Medium devices (tablet) */
