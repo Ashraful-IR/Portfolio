@@ -2051,6 +2051,12 @@ body {
     }
     
 }
+@media screen and (max-width: 600px) {
+    .hero img {
+        max-width: 70%;
+    }
+    
+}
 
 @media (min-width: 768px) {
     .hero {
