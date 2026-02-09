@@ -453,7 +453,7 @@ a:focus-visible {
 @media (min-width: 993px) {
   .cert-slide {
     flex: 0 0 33.33%; /* show 3 slides */
-    height: 350px;
+    height: auto;
   }
 }
 
