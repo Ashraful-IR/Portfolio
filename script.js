@@ -169,3 +169,10 @@ document.querySelectorAll('.cert-slider').forEach(slider => {
     updateSlider();
   }, 3000);
 });
+
+
+
+
+
+
+
