@@ -392,17 +392,17 @@ document.addEventListener("DOMContentLoaded", () => {
   // ==========================
   const education = [
     {
-      degree: "BSc in Computer Science",
-      institution: "Your University",
-      year: "2020 – 2024",
-      achievements: "Dean's List, GPA: 3.8/4.0",
+      degree: "BSc in Computer Science and Engineering",
+      institution: "American International University-Bangladesh (AIUB)",
+      year: "2022 – 2026",
+      
     },
     {
-      degree: "Higher Secondary Education",
-      institution: "Your School",
+      degree: "Higher Secondary Certificate (HSC)",
+      institution: "Addhyapak Abdul Majid College",
       year: "2018 – 2020",
-      achievements: "Top 5% of class",
-    },
+      
+    }
   ];
 
   let activeIndex = 0;
@@ -442,13 +442,13 @@ document.addEventListener("DOMContentLoaded", () => {
       eduGrid.appendChild(card);
     });
 
-    pingBall.style.left = activeIndex === 0 ? "20%" : "80%";
+    // pingBall.style.left = activeIndex === 0 ? "40%" : "90%";
   }
   renderCards();
-  setInterval(() => {
-    activeIndex = activeIndex === 0 ? 1 : 0;
-    renderCards();
-  }, 2000);
+  // setInterval(() => {
+  //   activeIndex = activeIndex === 0 ? 1 : 0;
+  //   renderCards();
+  // }, 2000);
 
   // ==========================
   // NAV LINKS RENDERING
