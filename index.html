@@ -9,32 +9,39 @@
     />
     <title>Ashraf</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="responsive.css" />
-    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <style></style>
 
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <!-- Navigation -->
-    <nav id="navbar" class="sticky top-0 z-50 transition-all duration-300">
+    <nav
+      id="navbar"
+      class="sticky top-0 z-50 bg-white/95 backdrop-blur-lg transition-all duration-300 shadow-sm border-b border-gray-200"
+    >
       <div
-        class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16"
+        class="container mx-auto px-10 flex items-center justify-between h-16"
       >
         <!-- Logo -->
         <a
           href="#home"
           id="logo"
-          class="text-lg font-bold tracking-tight text-gray-800"
-          >Portfolio<span class="text-blue-500">.</span></a
+          class="text-2xl font-bold tracking-tight text-gray-800"
+          >Ashraful Islam<span class="text-blue-500">.</span></a
         >
 
         <!-- Desktop nav -->
@@ -97,7 +104,7 @@
       <div class="max-w-6xl mx-auto w-full py-16 lg:py-24 px-4">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <!-- Text -->
-          <div class="order-2 lg:order-1">
+          <div class="order-2 lg:order-1 p-2 animate-fade-up">
             <p
               class="text-blue-500 font-medium tracking-wide text-sm mb-4 animate-fade-up"
             >
@@ -107,8 +114,8 @@
             <h1
               class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight animate-fade-up-delay-1"
             >
-              Your Name.<br />
-              <span class="text-gray-500">Software Engineer.</span>
+              Md Ashraful Islam.<br />
+              <span class="text-gray-500 text-3xl sm:text-4xl lg:text-5xl">Software Engineer.</span>
             </h1>
 
             <p
@@ -121,21 +128,8 @@
 
             <div class="mt-8 flex gap-4 animate-fade-up-delay-3">
               <!-- View My Work -->
-              <a href="#projects" class="btn-primary">
+              <a href="#projects" class="btn-primary flex items-center gap-2">
                 View My Work
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <line x1="12" y1="5" x2="12" y2="19" />
-                  <polyline points="19 12 12 19 5 12" />
-                </svg>
               </a>
 
               <!-- Contact Me -->
@@ -144,7 +138,9 @@
           </div>
 
           <!-- Image -->
-          <div class="order-1 lg:order-2 flex justify-center animate-fade-up">
+          <div
+            class="order-1 lg:order-2 flex justify-end items-end animate-fade-up"
+          >
             <div class="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
               <div class="absolute inset-0 bg-blue-500/10 rounded-full"></div>
               <img
@@ -159,6 +155,68 @@
     </section>
 
     <section id="line" class="line"></section>
+
+    <section id="about" class="py-24">
+      <div class="max-w-6xl mx-auto px-4 fade-up">
+        <h2
+          class="text-3xl sm:text-4xl font-bold text-gray-800 mb-12 text-center"
+        >
+          About Me
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+          <!-- Text -->
+          <div class="space-y-4">
+            <p class="text-gray-500">
+              I'm a passionate software engineer with a strong foundation in web
+              development. I enjoy building applications that solve real-world
+              problems and deliver great user experiences.
+            </p>
+            <p class="text-gray-500">
+              With expertise in modern frontend and backend technologies, I
+              focus on writing clean, maintainable code. I'm always eager to
+              learn new technologies and improve my craft.
+            </p>
+            <p class="text-gray-500">
+              When I'm not coding, you can find me exploring new tech,
+              contributing to open-source projects, or learning about system
+              design and architecture.
+            </p>
+          </div>
+
+          <!-- Quick Facts Card -->
+          <div class="bg-white shadow-md rounded-xl p-6 space-y-4 fade-up">
+            <h3 class="font-bold text-gray-800 text-lg">Quick Facts</h3>
+            <ul class="space-y-3">
+              <li class="flex justify-between text-sm">
+                <span class="text-gray-500">Location</span>
+                <span class="text-gray-800 font-medium"
+                  >Your City, Country</span
+                >
+              </li>
+              <li class="flex justify-between text-sm">
+                <span class="text-gray-500">Experience</span>
+                <span class="text-gray-800 font-medium">X+ Years</span>
+              </li>
+              <li class="flex justify-between text-sm">
+                <span class="text-gray-500">Focus</span>
+                <span class="text-gray-800 font-medium"
+                  >Full-Stack Web Development</span
+                >
+              </li>
+              <li class="flex justify-between text-sm">
+                <span class="text-gray-500">Languages</span>
+                <span class="text-gray-800 font-medium"
+                  >English, Your Language</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="" class="line"></section>
 
     <!-- Work Section -->
     <section id="projects" class="py-16">
@@ -227,7 +285,111 @@
     </div>
 
     <section id="" class="line"></section>
+    <section id="experience" class="py-24 fade-up">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2
+          class="text-3xl sm:text-4xl font-bold text-gray-800 mb-12 text-center"
+        >
+          Experience
+        </h2>
 
+        <div class="relative">
+          <!-- Timeline line -->
+          <div
+            class="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-gray-300 md:-translate-x-px"
+          ></div>
+
+          <div class="space-y-12">
+            <!-- Experience items -->
+            <div
+              class="relative flex flex-col md:flex-row items-start md:items-center gap-8"
+            >
+              <!-- Dot -->
+              <div
+                class="absolute left-4 md:left-1/2 w-3 h-3 bg-cyan-400 rounded-full -translate-x-1.5 mt-1 md:mt-0 z-10"
+              ></div>
+
+              <!-- Content -->
+              <div class="ml-12 md:ml-0 md:w-1/2 md:pr-12 md:text-right">
+                <div class="bg-white shadow-md p-6 rounded-lg">
+                  <span class="text-cyan-400 text-sm font-medium"
+                    >2023 – Present</span
+                  >
+                  <h3 class="text-lg font-bold text-gray-800 mt-1">
+                    Software Engineer
+                  </h3>
+                  <p class="text-gray-500 text-sm font-medium mb-2">
+                    Tech Company
+                  </p>
+                  <p class="text-gray-500 text-sm">
+                    Developed and maintained web applications using React and
+                    Node.js. Collaborated with cross-functional teams to deliver
+                    high-quality features on schedule.
+                  </p>
+                </div>
+              </div>
+
+              <div class="hidden md:block md:w-1/2"></div>
+            </div>
+
+            <div
+              class="relative flex flex-col md:flex-row-reverse items-start md:items-center gap-8"
+            >
+              <div
+                class="absolute left-4 md:left-1/2 w-3 h-3 bg-cyan-400 rounded-full -translate-x-1.5 mt-1 md:mt-0 z-10"
+              ></div>
+              <div class="ml-12 md:ml-0 md:w-1/2 md:pl-12">
+                <div class="bg-white shadow-md p-6 rounded-lg">
+                  <span class="text-cyan-400 text-sm font-medium"
+                    >2022 – 2023</span
+                  >
+                  <h3 class="text-lg font-bold text-gray-800 mt-1">
+                    Frontend Developer Intern
+                  </h3>
+                  <p class="text-gray-500 text-sm font-medium mb-2">
+                    Startup Inc.
+                  </p>
+                  <p class="text-gray-500 text-sm">
+                    Built responsive UI components and implemented design
+                    systems. Improved page load performance by 40% through code
+                    splitting and lazy loading.
+                  </p>
+                </div>
+              </div>
+              <div class="hidden md:block md:w-1/2"></div>
+            </div>
+
+            <div
+              class="relative flex flex-col md:flex-row items-start md:items-center gap-8"
+            >
+              <div
+                class="absolute left-4 md:left-1/2 w-3 h-3 bg-cyan-400 rounded-full -translate-x-1.5 mt-1 md:mt-0 z-10"
+              ></div>
+              <div class="ml-12 md:ml-0 md:w-1/2 md:pr-12 md:text-right">
+                <div class="bg-white shadow-md p-6 rounded-lg">
+                  <span class="text-cyan-400 text-sm font-medium"
+                    >2021 – 2022</span
+                  >
+                  <h3 class="text-lg font-bold text-gray-800 mt-1">
+                    Freelance Developer
+                  </h3>
+                  <p class="text-gray-500 text-sm font-medium mb-2">
+                    Self-Employed
+                  </p>
+                  <p class="text-gray-500 text-sm">
+                    Delivered custom web solutions for small businesses. Managed
+                    client relationships and project timelines independently.
+                  </p>
+                </div>
+              </div>
+              <div class="hidden md:block md:w-1/2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="" class="line"></section>
     <!-- Skills Section -->
     <section id="techstack" class="py-24 w-full">
       <div class="max-w-4xl mx-auto text-center">
@@ -300,237 +462,7 @@
 
     <section id="" class="line"></section>
 
-    <section id="experience" class="py-24 fade-up">
-      <div class="max-w-6xl mx-auto px-4">
-        <h2
-          class="text-3xl sm:text-4xl font-bold text-gray-800 mb-12 text-center"
-        >
-          Experience
-        </h2>
-
-        <div class="relative">
-          <!-- Timeline line -->
-          <div
-            class="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-gray-300 md:-translate-x-px"
-          ></div>
-
-          <div class="space-y-12">
-            <!-- Experience items -->
-            <div
-              class="relative flex flex-col md:flex-row items-start md:items-center gap-8"
-            >
-              <!-- Dot -->
-              <div
-                class="absolute left-4 md:left-1/2 w-3 h-3 bg-blue-600 rounded-full -translate-x-1.5 mt-1 md:mt-0 z-10"
-              ></div>
-
-              <!-- Content -->
-              <div class="ml-12 md:ml-0 md:w-1/2 md:pr-12 md:text-right">
-                <div class="bg-white shadow-md p-6 rounded-lg">
-                  <span class="text-blue-600 text-sm font-medium"
-                    >2023 – Present</span
-                  >
-                  <h3 class="text-lg font-bold text-gray-800 mt-1">
-                    Software Engineer
-                  </h3>
-                  <p class="text-gray-500 text-sm font-medium mb-2">
-                    Tech Company
-                  </p>
-                  <p class="text-gray-500 text-sm">
-                    Developed and maintained web applications using React and
-                    Node.js. Collaborated with cross-functional teams to deliver
-                    high-quality features on schedule.
-                  </p>
-                </div>
-              </div>
-
-              <div class="hidden md:block md:w-1/2"></div>
-            </div>
-
-            <div
-              class="relative flex flex-col md:flex-row-reverse items-start md:items-center gap-8"
-            >
-              <div
-                class="absolute left-4 md:left-1/2 w-3 h-3 bg-blue-600 rounded-full -translate-x-1.5 mt-1 md:mt-0 z-10"
-              ></div>
-              <div class="ml-12 md:ml-0 md:w-1/2 md:pl-12">
-                <div class="bg-white shadow-md p-6 rounded-lg">
-                  <span class="text-blue-600 text-sm font-medium"
-                    >2022 – 2023</span
-                  >
-                  <h3 class="text-lg font-bold text-gray-800 mt-1">
-                    Frontend Developer Intern
-                  </h3>
-                  <p class="text-gray-500 text-sm font-medium mb-2">
-                    Startup Inc.
-                  </p>
-                  <p class="text-gray-500 text-sm">
-                    Built responsive UI components and implemented design
-                    systems. Improved page load performance by 40% through code
-                    splitting and lazy loading.
-                  </p>
-                </div>
-              </div>
-              <div class="hidden md:block md:w-1/2"></div>
-            </div>
-
-            <div
-              class="relative flex flex-col md:flex-row items-start md:items-center gap-8"
-            >
-              <div
-                class="absolute left-4 md:left-1/2 w-3 h-3 bg-blue-600 rounded-full -translate-x-1.5 mt-1 md:mt-0 z-10"
-              ></div>
-              <div class="ml-12 md:ml-0 md:w-1/2 md:pr-12 md:text-right">
-                <div class="bg-white shadow-md p-6 rounded-lg">
-                  <span class="text-blue-600 text-sm font-medium"
-                    >2021 – 2022</span
-                  >
-                  <h3 class="text-lg font-bold text-gray-800 mt-1">
-                    Freelance Developer
-                  </h3>
-                  <p class="text-gray-500 text-sm font-medium mb-2">
-                    Self-Employed
-                  </p>
-                  <p class="text-gray-500 text-sm">
-                    Delivered custom web solutions for small businesses. Managed
-                    client relationships and project timelines independently.
-                  </p>
-                </div>
-              </div>
-              <div class="hidden md:block md:w-1/2"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="" class="line"></section>
-
-    <section id="certificates" class="py-16">
-      <div class="max-w-4xl mx-auto px-4">
-        <h2
-          class="text-3xl sm:text-4xl font-bold text-gray-800 mb-12 text-center"
-        >
-          Certificates
-        </h2>
-
-        <div class="relative max-w-2xl mx-auto group">
-          <!-- Carousel -->
-          <div class="overflow-hidden rounded-xl">
-            <div
-              id="carouselInner"
-              class="flex transition-transform duration-500 ease-in-out"
-            >
-              <!-- Slides will be injected here -->
-            </div>
-          </div>
-
-          <!-- Arrows -->
-          <button
-            id="prevBtn"
-            class="absolute left-3 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white backdrop-blur-sm rounded-full p-2 text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-200"
-            aria-label="Previous certificate"
-          >
-            <!-- Left Arrow SVG -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <polyline points="15 18 9 12 15 6"></polyline>
-            </svg>
-          </button>
-          <button
-            id="nextBtn"
-            class="absolute right-3 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white backdrop-blur-sm rounded-full p-2 text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-200"
-            aria-label="Next certificate"
-          >
-            <!-- Right Arrow SVG -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-          </button>
-
-          <!-- Dots -->
-          <div id="dotsContainer" class="flex justify-center gap-2 mt-4"></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="" class="line"></section>
-
     <!-- About Section -->
-    <section id="about" class="py-24">
-      <div class="max-w-6xl mx-auto px-4 fade-up">
-        <h2
-          class="text-3xl sm:text-4xl font-bold text-gray-800 mb-12 text-center"
-        >
-          About Me
-        </h2>
-
-        <div class="grid md:grid-cols-2 gap-12 items-start">
-          <!-- Text -->
-          <div class="space-y-4">
-            <p class="text-gray-500">
-              I'm a passionate software engineer with a strong foundation in web
-              development. I enjoy building applications that solve real-world
-              problems and deliver great user experiences.
-            </p>
-            <p class="text-gray-500">
-              With expertise in modern frontend and backend technologies, I
-              focus on writing clean, maintainable code. I'm always eager to
-              learn new technologies and improve my craft.
-            </p>
-            <p class="text-gray-500">
-              When I'm not coding, you can find me exploring new tech,
-              contributing to open-source projects, or learning about system
-              design and architecture.
-            </p>
-          </div>
-
-          <!-- Quick Facts Card -->
-          <div class="bg-white shadow-md rounded-xl p-6 space-y-4 fade-up">
-            <h3 class="font-bold text-gray-800 text-lg">Quick Facts</h3>
-            <ul class="space-y-3">
-              <li class="flex justify-between text-sm">
-                <span class="text-gray-500">Location</span>
-                <span class="text-gray-800 font-medium"
-                  >Your City, Country</span
-                >
-              </li>
-              <li class="flex justify-between text-sm">
-                <span class="text-gray-500">Experience</span>
-                <span class="text-gray-800 font-medium">X+ Years</span>
-              </li>
-              <li class="flex justify-between text-sm">
-                <span class="text-gray-500">Focus</span>
-                <span class="text-gray-800 font-medium"
-                  >Full-Stack Web Development</span
-                >
-              </li>
-              <li class="flex justify-between text-sm">
-                <span class="text-gray-500">Languages</span>
-                <span class="text-gray-800 font-medium"
-                  >English, Your Language</span
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section id="" class="line"></section>
 
@@ -591,7 +523,7 @@
           </form>
 
           <!-- Social Links -->
-          <div class="flex flex-col justify-center space-y-6">
+          <div class="flex flex-col justify-center items-center space-y-6">
             <p class="text-gray-500">
               You can also reach me through these platforms:
             </p>
@@ -652,8 +584,6 @@
       </div>
     </section>
 
-    <section id="" class="line"></section>
-    
     <!-- Footer -->
     <footer class="border-t border-gray-300 py-8">
       <div

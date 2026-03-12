@@ -1,3 +1,8 @@
+*{
+   font-family: "DM Sans", sans-serif;
+}
+
+
 @keyframes ping {
   0% {
     transform: scale(1);
