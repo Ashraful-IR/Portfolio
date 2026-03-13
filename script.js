@@ -47,9 +47,9 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "Git Hub Issue Tracker",
       description:
-        "A full-featured online store with cart, checkout, and payment integration.",
+        "This is a github issue tracker website. Basically show all the issues with it’s according status like “Open” or “Closed”. And also indicate the priority level.",
       longDescription:
-        "Built a complete e-commerce solution with product catalog, shopping cart, secure checkout flow, and Stripe payment integration. Features include user authentication, order history, and an admin dashboard for managing products and orders.",
+        "A GitHub Issue Tracker web application that allows users to view and manage issues from GitHub repositories. The application fetches issue data using the GitHub API and displays it in an organized manner, categorizing issues by their status (e.g., Open, Closed) and priority level. Users can easily track the progress of their projects and stay updated on any changes or updates to their issues.",
       image:
         "./assets/project-pic/GH-Issue.png",
       technologies: ["Html", "Tailwind CSS", "JavaScript", "Open API"],
@@ -59,9 +59,9 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "English Janala",
       description:
-        "A collaborative project management tool with real-time updates.",
+        "A responsive interactive English learning platform featuring dynamic lesson buttons, searchable word cards with pronunciation, example details, and the ability to save favorite words for seamless learning across devices.",
       longDescription:
-        "Developed a real-time task management application that allows teams to create, assign, and track tasks.",
+        "An interactive English learning platform designed to enhance vocabulary acquisition through engaging lessons and personalized study tools. Key features include dynamic lesson buttons that allow users to explore various topics, a searchable word card system with integrated pronunciation and example sentences, and a favorites feature that enables users to save and review their preferred words across sessions. The platform is built with a responsive design to ensure an optimal learning experience on both desktop and mobile devices.",
       image:
         "./assets/project-pic/Englishjanala.png",
       technologies: ["Html", "Tailwind CSS", "JavaScript", "Open API"],
@@ -71,9 +71,9 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "Job Application Tracker",
       description:
-        "Real-time weather data visualization with location-based forecasts.",
+        "A **responsive job application dashboard** that lets users manage and track applications with interactive job cards, real-time status updates, and a clean mobile-first UI.",
       longDescription:
-        "Created a weather dashboard displaying current conditions and 7-day forecasts with responsive charts.",
+        "A responsive job application dashboard designed to help users efficiently manage and track their job applications. The platform features interactive job cards that display essential information such as company name, position, application date, and current status. Users can easily update the status of their applications in real-time, allowing for seamless organization and follow-up. The dashboard is built with a mobile-first approach, ensuring a clean and intuitive user interface across all devices.",
       image:
         "./assets/project-pic/JAT.png",
       technologies: ["JavaScript", "CSS", "Html"],
