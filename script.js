@@ -50,8 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "This is a github issue tracker website. Basically show all the issues with it’s according status like “Open” or “Closed”. And also indicate the priority level.",
       longDescription:
         "A GitHub Issue Tracker web application that allows users to view and manage issues from GitHub repositories. The application fetches issue data using the GitHub API and displays it in an organized manner, categorizing issues by their status (e.g., Open, Closed) and priority level. Users can easily track the progress of their projects and stay updated on any changes or updates to their issues.",
-      image:
-        "./assets/project-pic/GH-Issue.png",
+      image: "./assets/project-pic/GH-Issue.png",
       technologies: ["Html", "Tailwind CSS", "JavaScript", "Open API"],
       liveUrl: "https://ashraful-ir.github.io/GitHub-Issue-Traker/",
       githubUrl: "https://github.com/Ashraful-IR/GitHub-Issue-Traker",
@@ -62,8 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "A responsive interactive English learning platform featuring dynamic lesson buttons, searchable word cards with pronunciation, example details, and the ability to save favorite words for seamless learning across devices.",
       longDescription:
         "An interactive English learning platform designed to enhance vocabulary acquisition through engaging lessons and personalized study tools. Key features include dynamic lesson buttons that allow users to explore various topics, a searchable word card system with integrated pronunciation and example sentences, and a favorites feature that enables users to save and review their preferred words across sessions. The platform is built with a responsive design to ensure an optimal learning experience on both desktop and mobile devices.",
-      image:
-        "./assets/project-pic/Englishjanala.png",
+      image: "./assets/project-pic/Englishjanala.png",
       technologies: ["Html", "Tailwind CSS", "JavaScript", "Open API"],
       liveUrl: "https://ashraful-ir.github.io/EnglishJanala/",
       githubUrl: "https://github.com/Ashraful-IR/EnglishJanala",
@@ -71,11 +69,10 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "Job Application Tracker",
       description:
-        "A **responsive job application dashboard** that lets users manage and track applications with interactive job cards, real-time status updates, and a clean mobile-first UI.",
+        "A responsive job application dashboard that lets users manage and track applications with interactive job cards, real-time status updates, and a clean mobile-first UI.",
       longDescription:
         "A responsive job application dashboard designed to help users efficiently manage and track their job applications. The platform features interactive job cards that display essential information such as company name, position, application date, and current status. Users can easily update the status of their applications in real-time, allowing for seamless organization and follow-up. The dashboard is built with a mobile-first approach, ensuring a clean and intuitive user interface across all devices.",
-      image:
-        "./assets/project-pic/JAT.png",
+      image: "./assets/project-pic/JAT.png",
       technologies: ["JavaScript", "CSS", "Html"],
       liveUrl: "https://ashraful-ir.github.io/Job-Application-Tracker/",
       githubUrl: "https://github.com/Ashraful-IR/Job-Application-Tracker",
@@ -95,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
       <div class="p-6 bg-cyan-50">
         <h3 class="font-bold text-[30px] mb-2">${project.title}</h3>
-        <p class="text-gray-500 text-sm mb-4">${project.description}</p>
+        <p class="text-gray-500 text-sm mb-4 text-justify">${project.description}</p>
         <div class="flex flex-wrap gap-2 ">
           ${project.technologies.map((t) => `<span class="text-xs font-medium bg-yellow-100 border border-yellow-300 px-2.5 py-1 rounded-md">${t}</span>`).join("")}
         </div>
@@ -395,14 +392,12 @@ document.addEventListener("DOMContentLoaded", () => {
       degree: "BSc in Computer Science and Engineering",
       institution: "American International University-Bangladesh (AIUB)",
       year: "2022 – 2026",
-      
     },
     {
       degree: "Higher Secondary Certificate (HSC)",
       institution: "Addhyapak Abdul Majid College",
       year: "2018 – 2020",
-      
-    }
+    },
   ];
 
   let activeIndex = 0;
@@ -502,3 +497,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   console.log("Portfolio JS loaded successfully");
 });
+
+

@@ -40,8 +40,8 @@
         <a
           href="#home"
           id="logo"
-          class="text-2xl font-bold tracking-tight text-gray-800"
-          >Ashraful Islam<span class="text-blue-500">.</span></a
+          class="text-2xl font-bold tracking-tight bg-gradient-to-r from-purple-400 to-cyan-300 bg-clip-text text-transparent"
+          >Ashraful Islam <span class="text-blue-500">.</span></a
         >
 
         <!-- Desktop nav -->
@@ -50,7 +50,7 @@
         <!-- Mobile Hamburger -->
         <button
           id="hamburgerBtn"
-          class="md:hidden text-gray-800 p-2"
+          class="md:hidden text-gray-800 p-2 "
           aria-label="Toggle menu"
         >
           <!-- Hamburger / Close Icon -->
@@ -64,6 +64,7 @@
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
+            
           >
             <line x1="3" y1="12" x2="21" y2="12" />
             <line x1="3" y1="6" x2="21" y2="6" />
@@ -79,7 +80,7 @@
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="hidden"
+            class="hidden bg-gradient-to-r from-purple-400 to-cyan-300 bg-clip-text"
           >
             <line x1="18" y1="6" x2="6" y2="18" />
             <line x1="6" y1="6" x2="18" y2="18" />
@@ -130,12 +131,12 @@
 
             <div class="mt-8 flex gap-4 animate-fade-up-delay-3">
               <!-- View My Work -->
-              <a href="#projects" class="btn-primary flex items-center gap-2">
+              <a href="#projects" class="btn-primary flex items-center gap-2 border border-cyan-300 shadow-md shadow-black">
                 View My Work
               </a>
 
               <!-- Contact Me -->
-              <a href="#contact" class="btn-secondary"> Contact Me </a>
+              <a href="#contact" class="btn-secondary border border-cyan-300 shadow-md shadow-black"> Contact Me </a>
             </div>
           </div>
 
@@ -188,7 +189,7 @@
 
           <!-- Quick Facts Card -->
           <div
-            class="bg-white shadow-md rounded-xl p-6 space-y-4 fade-up border border-cyan-200 bg-gradient-to-br from-cyan-50 to-white"
+            class="bg-white shadow-[inset_2px_2px_8px_rgba(0,0,0,0.1)] rounded-xl p-6 space-y-4 fade-up border border-cyan-200 bg-gray-50"
           >
             <h3 class="font-bold text-gray-800 text-lg">Quick Facts</h3>
             <ul class="space-y-3">
@@ -311,7 +312,7 @@
 
               <!-- Content -->
               <div class="ml-12 md:ml-0 md:w-1/2 md:pr-12 md:text-right">
-                <div class="bg-cyan-50 shadow-md p-6 rounded-lg">
+                <div class="bg-cyan-50 p-6 rounded-lg border border-cyan-200 shadow-md shadow-black/50">
                   <span class="text-cyan-400 text-sm font-medium"
                     >2026 – Present</span
                   >
@@ -339,7 +340,7 @@
                 class="absolute left-4 md:left-1/2 w-3 h-3 bg-cyan-400 rounded-full -translate-x-1.5 mt-1 md:mt-0 z-10"
               ></div>
               <div class="ml-12 md:ml-0 md:w-1/2 md:pl-12">
-                <div class="bg-cyan-50 shadow-md p-6 rounded-lg">
+                <div class="bg-cyan-50 p-6 rounded-lg border border-cyan-200 shadow-md shadow-black/50">
                   <span class="text-cyan-400 text-sm font-medium"
                     >2025 – 2025</span
                   >
@@ -366,7 +367,7 @@
                 class="absolute left-4 md:left-1/2 w-3 h-3 bg-cyan-400 rounded-full -translate-x-1.5 mt-1 md:mt-0 z-10"
               ></div>
               <div class="ml-12 md:ml-0 md:w-1/2 md:pr-12 md:text-right">
-                <div class="bg-cyan-50 shadow-md p-6 rounded-lg">
+                <div class="bg-cyan-50 p-6 rounded-lg border border-cyan-200 shadow-md shadow-black/50">
                   <span class="text-cyan-400 text-sm font-medium"
                     >2024 – 2025</span
                   >
@@ -453,8 +454,6 @@
 
     <!-- About Section -->
 
-    <section id="" class="line"></section>
-
     <!-- Contact Section -->
     <section id="contact" class="py-24 p-5">
       <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 text-center">
@@ -511,11 +510,11 @@
           </form>
 
           <!-- Social Links -->
-          <div class="flex flex-col justify-center items-center space-y-6">
-            <p class="text-gray-500">
+          <div class="flex flex-col justify-center items-center space-y-6 border border-cyan-200 rounded-xl p-6 bg-cyan-50 shadow-[inset_2px_4px_8px_rgba(0,0,0,0.05)]">
+            <p class="text-black-500">
               You can also reach me through these platforms:
             </p>
-            <div class="space-y-4">
+            <div class="space-y-4 flex justify-center items-center flex-col">
               <a
                 href="https://github.com"
                 target="https://github.com/Ashraful-IR"
@@ -523,7 +522,7 @@
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
+                  class="h-5 w-5 "
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
